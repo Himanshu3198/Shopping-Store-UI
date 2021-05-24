@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+
+    <title>Himansh Cart</title>
+  </head>
+  <body class="bg-light">
+    
+       <div class="container-fluid bg-white">
+           <div class="row">
+               <div class="col-md-10 col-11 mx-auto">
+                   <div class="row mt-5 gx-3">
+                       <!-- left side div -->
+                       <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow border-none outline-none">
+                           <div class="card p-4">
+                              <h2 class="py-4 font-weight-bold">Cart (2 items)</h2>
+                              <div class="row">
+                                  <!-- cart image div -->
+                                  <div class="col-md-5 col-11 mx-auto bg-white d-flex justify-content-center align-items-center shadow  product_img">
+                                      <img src="ecommerce-images/1w.jpg" alt="cart-img" style="width: 100%; height: 100%;">
+                                  </div>
+                                  <!-- cart product details -->
+                                  <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                      <div class="row">
+                                          <!-- product name -->
+                                         <div class="col-6 card-title">
+                                             <h1 class="mb-4 product_name">Blue Zara shirt for women</h1>
+                                             <p class="mb-2">Color: red</p>
+                                             <p class="mb-2">Fabric: cotton </p>
+                                             <p class="mb-3">Size: XL</p>
+
+                                         </div>
+                                         <!-- QUANTITY INCREAMENT BUTTON -->
+                                         <div class="col-6">
+                                             <ul class="pagination justify-content-end set_quantity">
+                                                 <li class="page-item"><button  class="page-link"  onclick="decreaseNumber('textbox','itemval')"><i class="fa fa-minus"></i></button></li>
+                                                 <li class="page-item"><input type="text" name="" class="page-link" value="1" id="textbox"></li>
+                                                 <li class="page-item"><button class="page-link"  onclick="increaseNumber('textbox','itemval')"><i class="fa fa-plus"> </i></button></li>
+
+                                             </ul>
+                                         </div>
+                                      </div>
+                                      <!-- remove and whislist -->
+                                      <div class="row">
+                                          <div class="col-8 d-flex justify-content-between remove_wish">
+                                              <p><i class="fa fa-trash"></i>    Remove Item</p>
+                                              <p><i class="fa fa-heart"></i>    Add to Wishlist</p>
+                                          </div>
+                                          <div class="col-4 d-lex justify-content-end price_money">
+                                              <h3>$<span id="itemval">50.00</span></h3>
+
+                                          </div>
+                                      </div>
+                                  </div>
+
+
+                              </div>
+
+                           </div>
+                           <!-- 2nd cart -->
+                           <div class="card p-4">
+                            <!-- <h2 class="py-4 font-weight-bold">Cart (2 items)</h2> -->
+                            <div class="row">
+                                <!-- cart image div -->
+                                <div class="col-md-5 col-11 mx-auto bg-white d-flex justify-content-center align-items-center shadow  product_img">
+                                    <img src="ecommerce-images/2w.jpg" alt="cart-img" style="width: 100%; height: 100%;">
+                                </div>
+                                <!-- cart product details -->
+                                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                    <div class="row">
+                                        <!-- product name -->
+                                       <div class="col-6 card-title">
+                                           <h1 class="mb-4 product_name">Green Zara shirt for women</h1>
+                                           <p class="mb-2">Color: Green</p>
+                                           <p class="mb-2">Fabric: cotton </p>
+                                           <p class="mb-3">Size: XL</p>
+
+                                       </div>
+                                       <!-- QUANTITY INCREAMENT BUTTON -->
+                                       <div class="col-6">
+                                           <ul class="pagination justify-content-end set_quantity">
+                                               <li class="page-item"><button  class="page-link"  onclick="decreaseNumber('textbox1','itemval1')"><i class="fa fa-minus"></i></button></li>
+                                               <li class="page-item"><input type="text" name="" class="page-link" value="1" id="textbox1"></li>
+                                               <li class="page-item"><button class="page-link"  onclick="increaseNumber('textbox1','itemval1')"><i class="fa fa-plus"> </i></button></li>
+
+                                           </ul>
+                                       </div>
+                                    </div>
+                                    <!-- remove and whislist -->
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-between remove_wish">
+                                            <p><i class="fa fa-trash"></i>    Remove Item</p>
+                                            <p><i class="fa fa-heart"></i>    Add to Wishlist</p>
+                                        </div>
+                                        <div class="col-4 d-lex justify-content-end price_money">
+                                            <h3>$<span id="itemval1">50.00</span></h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                       </div>
+
+                   </div>
+                   <!-- right side div -->
+                   <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                       <div class="right-side p-3 shadow bg-white">
+                          <h2 class="product_name mb-5">the total amount of</h2>
+                          <div class="price_indiv d-flex justify-content-between">   
+                             <p>Product Amount</p>
+                             <p>$<span id="product_total_amt"> 0.00</span></p>
+
+                          </div>
+                          <div class="price_indiv d-flex justify-content-between">   
+                            <p>Shipping Charge</p>
+                            <p>$<span id="shipping_charge"> 20.00</span></p>
+                         </div>
+                         <hr>
+                         <div class="total-amt d-flex justify-content-between font-weight-bold">
+                             <p>Total Amount (Including GST)</p>
+                             <P>$<span id="total_cart_amt"> 0.00</span></P>
+                         </div>
+                         <button class="btn btn-primary ">CheckOut</button>
+                       </div>
+                       <!-- DISCOUNT CODE PART -->
+                       <div class="discount_code mt-3 shadow">
+                           <div class="card">
+                               <div class="card-body">
+                                   <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Apply Discount Coupan
+                                            <span><i class="fa fa-chevron-down pt-1"></i></span> 
+
+                                   </a>
+                                   <div class="collapse" id="collapseExample">
+                                       <div class="mt-3">
+                                           <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter coupan code">
+                                           <small id="error_trw" class="text-dark mt-3">code is himansh3198</small>
+                                       </div>
+                                       <button class="btn btn-primary btn-sm mt-3" onclick="discountCode()" >Apply</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- discount code end -->
+                       <div class="mt-3 shadow p-3 bg-white">
+                           <div class="pt-4">
+                               <h5>Expected Delivery Date</h5>
+
+                               <p><abbr>between</abbr>  September 01-september to 05-september 2020</p>
+                           </div>
+                       </div>
+                   </div>
+
+
+               </div>
+           </div>
+       </div>
+
+
+
+
+
+           <script>
+                const discountCode =()=>{
+        console.log('COUPAN CODE BUTTON')
+        var  error_trw=document.getElementById('error_trw')
+        let totalAmtCurrent=parseInt(total_cart_amt.innerHTML)
+        if(discount_code1 =='himansh3198')
+        {
+            let newtotal=totalAmtCurrent-20;
+        total_cart_amt.innerHTML=newtotal;
+   
+        error_trw.innerHTML="COUPAN IS APPLIED SUCCESSFULLY !!!"
+        }
+        else{
+           
+            
+            error_trw.innerHTML="OOPS COUPAN IS INVALID  !!!"
+        }
+        
+
+       }
+           </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
